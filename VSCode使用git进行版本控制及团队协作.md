@@ -100,5 +100,10 @@ $ git push origin 你的开发分支名
 $ git branch -a  //查看本地和远程所有分支，带*号是当前所在分支。
 $ git checkout master //切换到主分支
 $ git merge 你的开发分支名 //将你的开发分支合并到主分支
+git push origin master    # 推送master分支代码到远端
+git push origin --tags    # 推送tag到远端
 ```
 > 合并到主分支后，所有的成员拉取的内容都会改变，所以合并到主分支一定要谨慎。
+
+###【参考来源】
+- https://ovenzeze.github.io/git-team-wrok/
