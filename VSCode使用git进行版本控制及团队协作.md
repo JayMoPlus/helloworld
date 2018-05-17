@@ -55,4 +55,33 @@ git remote add origin git@github.com:JayMoPlus/helloworld.git
 现在我们查看一下.git文件夹下的config文件，可以看到添加了远程Reps地址。
 
 ![](https://github.com/xuanhun/vscode/raw/master/18.jpg)
+
 接下来我们从下拉菜单中执行发布命令。
+![](https://github.com/xuanhun/vscode/raw/master/19.jpg)
+
+之后，会把本地提交的文件同步到github。同步之后再打开git的隐藏菜单，可以看到 同步等命令可以直接使用了。
+
+## 正式使用
+- vs code打开git工作区就会看到所有代码显示在这里 
+
+![](http://upload-images.jianshu.io/upload_images/2065390-a262f07bfbd6248a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+-  点击+号，把所有文件提交到暂存区。 然后打开菜单选择–提交已暂存的 相当于`add .`
+- 然后按提示随便在消息框里输入一个消息，再按ctrl+enter提交 相当于`·`commit -m`
+- 然后把所有暂存的代码push云端，相当于`git push -u origin master`
+
+# 团队协作
+## 加入组织并建立分支
+- 创建组织并添加成员：在用户首页左下角有一个组织选项，点击添加组织。界面如下：
+-  创建项目组并添加分支:进入之后，点击添加项目，就可以添加项目了
+-  每个成员都建立一个分支(并用成员名字命名，这个适合小团队)
+
+## 开始团队协作
+
+- 同步远端内容到本地
+> 这里的master是你开发的项目主分支，开发前先将远端内容同步下来，因为别人可能合并了新的内容到主分支，为了保证开发进度的一致，需要先pull下主分支内容。
+- 将改动推送到远端分支
+```
+ git checkout 你的开发分支名 //切换到你的开发分支
+```
+> 现在你可以进行开发，开发完成并确认无误后你可以将改动推送到远程开发分支。
